@@ -1,24 +1,38 @@
-# README
+# Tonker5
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Messaging application to demonstrate knowledge on web sockets and ActionCable. with Rails 5.2.6.
 
-Things you may want to cover:
+## Dependencies
+- Rails 5.2.1
+- Ruby 2.5.1
 
-* Ruby version
+## Instructions
 
-* System dependencies
+Clone the repository:
 
-* Configuration
+```
+git clone https://github.com/adamtlee/tonker5.git
+```
 
-* Database creation
+cd into the directory:
+```
+cd tonker5/
+```
 
-* Database initialization
+install the gem dependencies:
+```
+bundle install
+```
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Run the existing migrations:
+```
+bundle exec rails db:migrate
+```
+Seed the database: 
+```
+bundle exec rails db:seed
+```
+run the server:
+```
+rails s 
+```
