@@ -1,7 +1,9 @@
 <h1>Chatroom index page</h1>
 
-<%= render @messages %>
-<%= form_for(@message, url: message_path) do |form| %>
+<div id="message-container">
+    <%= render @messages %>
+</div>
+<%= form_for(@message, url: message_path, remote: true) do |form| %>
     <%= form.text_field :body %>
     <%= form.button 'submit' %>
 <% end %>  
